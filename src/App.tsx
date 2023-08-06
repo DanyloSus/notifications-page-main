@@ -1,3 +1,11 @@
+import Header from "./Elements/Header";
+import ListNotifications from "./Elements/ListNotifications";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <main className="bg-white rounded-lg px-8 pt-9 pb-4 max-w-[732px]">
+      <Header />
+      <ListNotifications />
+    </main>
+  );
 }
