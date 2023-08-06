@@ -31,7 +31,7 @@ const Notifications = ({
   };
 
   return (
-    <div onClick={handleChange}>
+    <div onClick={handleChange} className="anim">
       {" "}
       <div
         className={`flex rounded-xl py-4 px-[18px] gap-5 transition-colors sm:text-sm ${

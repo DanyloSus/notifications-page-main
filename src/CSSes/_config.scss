@@ -20,3 +20,22 @@
     @apply text-dark-grayish-blue;
   }
 }
+
+@for $i from 1 through 7 {
+  .anim:nth-child(#{$i}) {
+    animation: anim 0.5s ease-in-out #{calc($i/3)}s backwards;
+  }
+}
+
+@keyframes anim {
+  0% {
+    position: relative;
+    left: -20px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
