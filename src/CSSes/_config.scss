@@ -11,7 +11,10 @@
 @layer components {
   h1,
   h2 {
-    @apply text-very-dark-blue font-extrabold;
+    @apply text-very-dark-blue font-extrabold inline;
+  }
+  #notif p {
+    @apply inline;
   }
   * {
     @apply text-dark-grayish-blue;
